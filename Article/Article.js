@@ -115,5 +115,7 @@ const data = [
 const articleComponent = () => {
   const article = document.createElement('div');
   article.classList.add('article');
-  console.log(article);
+
+  const title = document.createElement('h2');
+
 }
