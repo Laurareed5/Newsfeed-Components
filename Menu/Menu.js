@@ -37,7 +37,7 @@ const menuComponent = array => {
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
-  const unorderedList = createElement("ul");
+  const unorderedList = document.createElement("ul");
 
   menu.appendChild(unorderedList);
 
@@ -54,5 +54,5 @@ const menuComponent = array => {
   return menu;
 };
 
-const header = document.querySelector('.header');
+const header = document.querySelector(".header");
 header.appendChild(menuComponent(menuItems));

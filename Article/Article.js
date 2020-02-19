@@ -85,7 +85,7 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+  },
 
   {
     title: "Laura's New Article",
@@ -164,14 +164,11 @@ const articleComponent = (titleText, dateArticle, first, second, third) => {
 };
 
 const articles = document.querySelector(".articles");
-const articleDatas = [
-  { title: "Lambdalorians RULE!", date: "February 18, 2020" }
-];
-articleDatas.forEach(
-  ({ title, articleDate, firstParagraph, secondParagraph, thirdParagraph }) => {
+data.forEach(
+  ({ title, date, firstParagraph, secondParagraph, thirdParagraph }) => {
     const newArticle = articleComponent(
       title,
-      articleDate,
+      date,
       firstParagraph,
       secondParagraph,
       thirdParagraph
