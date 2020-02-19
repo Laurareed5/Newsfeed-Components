@@ -139,13 +139,22 @@ const articleComponent = (titleText, dateArticle, first, second, third) => {
   article.appendChild(title);
   article.appendChild(articleDate);
   article.appendChild(firstParagraph);
-  article.appendChild(secondChild);
+  article.appendChild(secondParagraph);
   article.appendChild(thirdParagraph);
   article.appendChild(button);
 
   button.addEventListener('click', () => {
     article.classList.toggle('article-open');
 
-    return articleComponent;
+    
   })
+
+  return article;
 }
+
+const articles = document.querySelector('.articles');
+const articleData = [{title:"test", date: ""}]
+articleData.forEach((currentItem) => {
+  const newArticle = articleComponent(currentItem.title, currentItem.articleDate, currentItem.firstParagraph, currentItem.secondParagraph, currentItem.thirdParagraph);
+  articles.appendChild(newArticle);
+})
