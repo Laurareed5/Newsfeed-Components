@@ -135,4 +135,11 @@ const articleComponent = (titleText, dateArticle, first, second, third) => {
   const button = document.createElement('span');
   button.classList.add('expandButton');
   button.textContent = 'Click';
+
+  article.appendChild(title);
+  article.appendChild(articleDate);
+  article.appendChild(firstParagraph);
+  article.appendChild(secondChild);
+  article.appendChild(thirdParagraph);
+  article.appendChild(button);
 }
