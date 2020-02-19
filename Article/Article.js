@@ -112,17 +112,27 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
-const articleComponent = () => {
+const articleComponent = (titleText, dateArticle, first, second, third) => {
   const article = document.createElement('div');
   article.classList.add('article');
 
   const title = document.createElement('h2');
+  title.textContent = titleText;
 
-  const date = document.createElement('p');
-  date.classList.add('date');
+  const articleDate = document.createElement('p');
+  articleDate.classList.add('date');
+  articleDate.textContent = dateArticle;
 
   const firstParagraph = document.createElement('p');
-  const secondParagraph = document.createElement('p');
-  const thirdParagraph = document.createElement('p');
+  firstParagraph.textContent = first;
 
+  const secondParagraph = document.createElement('p');
+  secondParagraph.textContent = second;
+
+  const thirdParagraph = document.createElement('p');
+  thirdParagraph.textContent = third;
+
+  const button = document.createElement('span');
+  button.classList.add('expandButton');
+  button.textContent = 'Click';
 }
