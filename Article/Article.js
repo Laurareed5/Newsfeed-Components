@@ -142,4 +142,10 @@ const articleComponent = (titleText, dateArticle, first, second, third) => {
   article.appendChild(secondChild);
   article.appendChild(thirdParagraph);
   article.appendChild(button);
+
+  button.addEventListener('click', () => {
+    article.classList.toggle('article-open');
+
+    return articleComponent;
+  })
 }
