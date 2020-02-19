@@ -118,4 +118,11 @@ const articleComponent = () => {
 
   const title = document.createElement('h2');
 
+  const date = document.createElement('p');
+  date.classList.add('date');
+
+  const firstParagraph = document.createElement('p');
+  const secondParagraph = document.createElement('p');
+  const thirdParagraph = document.createElement('p');
+
 }
